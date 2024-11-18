@@ -1,0 +1,48 @@
+.box {
+    min-width: 100px;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(8, 69, 43);
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.box::after {
+    content: '🥳';
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: 15px;
+}
+
+.box:nth-child(even):hover {
+   font-size: 2em;
+}
+
+.box:hover {
+    background-color: rgb(88, 196, 0);
+}
+
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    height: 500px;
+}
+
+
+/* Set Up */
+
+
+.container {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; /* default: nowrap */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
